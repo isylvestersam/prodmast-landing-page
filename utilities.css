@@ -1,0 +1,584 @@
+:root {
+    --dark-bg: rgb(12,54,60);
+    --light-bg: rgb(245, 247, 249);
+    --green-bg: rgb(204, 253, 162);
+    --black-color: rgb(11,15,18);
+    --dark-text: rgb(40,42,47);
+}
+
+/* BG COLORS ===*/
+.light-bg {
+    background-color: var(--light-bg);
+}
+.dark-bg {
+    background-color: var(--dark-bg);
+}
+
+.black-bg {
+    background-color: var(--black-color);
+}
+
+.green-bg {
+    background-color: var(--green-bg);
+}
+
+.white-bg {
+    background-color: rgb(255, 255, 255);
+}
+
+/* ========= CARDS ========*/
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(182, 182, 182, 0.492);
+    transition: transform 0.3s ease;
+}
+
+.card.card-left:hover,
+    .hundred.card.flex.flex-column.one.px-2:hover,
+    .total-projects.card.grid.p-3.cb.white-bg:hover,
+    .card.hundred.flex.flex-column.green-bg.p-5:hover,
+    .card.card-left.dark-bg.flex-column.p-3:hover {
+        transform: scale(0.95);
+    }
+
+.image-holder {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(182, 182, 182);
+    background-color: var(--light-bg);
+}
+
+.card2 {
+    height: 25rem;
+    max-width: 39rem;
+    width: 100%;
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.price.card {
+    max-width: 35rem;
+    width: 100%;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+    
+}
+
+.green-card {
+    max-width: 72rem;
+    width: 100%;
+    padding: 4rem 0;
+    margin: 0 auto;
+    background-color: rgb(18,60,67);
+    box-shadow: none;
+}
+.icon-card {
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 0.2rem ;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.124);
+}
+/* === CIRCLES === */
+.circle {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* === BUTTONS ===*/
+.btn-transparent {
+    padding: 1.5rem 2rem;
+    border-radius: 30px;
+    border: 1px solid white;
+    height: 3rem;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-transparent:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.3);
+    
+}
+.btn-primary {
+    padding: 0 2rem;
+    border-radius: 30px;
+    border: none;
+    height: 4rem;
+    background-color: var(--dark-bg);
+    color: white;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    
+    
+}
+
+.btn-light {
+    padding: 0 2rem;
+    border-radius: 5px;
+    height: 4rem;
+    border-radius: 30px;
+    background-color: white;
+    color: var(--dark-bg);
+    border: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--dark-bg)
+}
+
+.btn-light:hover,
+.btn-primary:hover {
+    cursor: pointer;
+    transform: scale(0.90);
+}
+
+.btn-primary.green {
+    background-color: rgb(227,255,205) ;
+    color: black;
+    border: 1px solid var(--dark-bg)
+}
+
+
+/* ===== FLEX ======*/
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-column{
+    flex-direction: column;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* ==== GRID === */
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+/*===== FONT COLOR ==== */
+.cw {
+    color:white;
+    text-align: center;
+}
+
+.cb {
+    color: var(--black-color)
+}
+
+/*===== FONT SIZES ==== */
+.text-align {
+    text-align: center;
+}
+.left-align {
+    text-align: left;
+}
+.heading{
+    font-size: 5.6rem;
+}
+.title {
+    font-size: 3.7rem;
+}
+
+.big-title {
+    font-size: 3rem;
+}
+.sub-title {
+    font-size: 2.2rem ;
+}
+
+.text {
+    font-size: 1.3rem ;
+}
+
+.bold {
+    font-weight: 1000;
+}
+
+/*====== MARGIN TOP) ===*/
+.mt-0-5 {
+    margin-top: 0.5rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 1.5rem;
+}
+
+.mt-3 {
+    margin-top: 2rem;
+}
+
+.mt-4 {
+    margin-top: 3rem;
+}
+
+.mt-5 {
+    margin-top: 4rem;
+}
+
+.mt-6 {
+    margin-top: 5rem;
+}
+
+.mt-7 {
+    margin-top: 6rem;
+}
+
+.mt-8 {
+    margin-top: 7rem;
+}
+.mt-9 {
+    margin-top: 8rem;
+}
+
+.mt-10 {
+    margin-top: 9rem;
+}
+
+.mt-11 {
+    margin-top: 10rem;
+}
+
+.mt-12 {
+    margin-top: 11em;
+}
+
+
+/*====== MARGINS (BOTTOM) ===*/
+.mb-0-5 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 3rem;
+}
+
+.mb-5 {
+    margin-bottom: 4rem;
+}
+
+.mb-6 {
+    margin-bottom: 5rem;
+}
+
+.mb-7 {
+    margin-bottom: 6rem;
+}
+
+.mb-8 {
+    margin-bottom: 7rem;
+}
+
+.mb-9 {
+    margin-bottom: 8rem;
+}
+
+.mb-10 {
+    margin-bottom: 9rem;
+}
+
+.mb-11 {
+    margin-bottom: 10rem;
+}
+
+
+/*====== MARGINS (HORIZONTAL AND VERTICAL) ===*/
+.center {
+    margin: 0 auto;
+
+}
+.m-0-5 {
+    margin: 0.5rem;
+}
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+
+/*====== MARGINS (HORIZONTAL) ===*/
+.my-0-5 {
+    margin: 0.5 0;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
+
+/*====== MARGINS (VERTICAL) ===*/
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.mx-2 {
+    margin: 0 1.5rem;
+}
+
+.mx-3 {
+    margin: 0 2rem;
+}
+
+.mx-4 {
+    margin: 0 3rem;
+}
+
+.mx-5 {
+    margin: 0 4rem;
+}
+
+/*====== PADDING TOP) ===*/
+.pt-0-5 {
+    padding-top: 0.1rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-2 {
+    padding-top: 1.5rem;
+}
+
+.pt-3 {
+    padding-top: 2rem;
+}
+
+.pt-4 {
+    padding-top: 3rem;
+}
+
+.pt-5 {
+    padding-top: 4rem;
+}
+
+.pt-6 {
+    padding-top: 5rem;
+}
+
+.pt-7 {
+    padding-top: 6rem;
+}
+
+.pt-8 {
+    padding-top: 7rem;
+}
+
+.pt-9 {
+    padding-top: 8rem;
+}
+
+.pt-10 {
+    padding-top: 9rem;
+}
+
+/*====== PADDING (BOTTOM) ===*/
+.pb-0-5 {
+    padding-bottom: 1rem;
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 1.5rem;
+}
+
+.pb-3 {
+    padding-bottom: 2rem;
+}
+
+.pb-4 {
+    padding-bottom: 3rem;
+}
+
+.pb-5 {
+    padding-bottom: 4rem;
+}
+
+.pb-6 {
+    padding-bottom: 5rem;
+}
+
+.pb-7 {
+    padding-bottom: 6rem;
+}
+
+.pb-8 {
+    padding-bottom: 7rem;
+}
+
+.pb-9 {
+    padding-bottom: 8rem;
+}
+
+.pb-10 {
+    padding-bottom: 9rem;
+}
+
+/* ===== PADDING ( HORIZONTAL AND VERTICAL ======= */
+.p-1{ padding: 1rem;
+}
+.p-2{
+    padding: 1.5rem;
+}
+
+.p-3{
+    padding: 2rem;
+}
+
+.p-4{
+    padding: 3rem;
+}
+
+.p-5{
+    padding: 4rem;
+}
+
+
+/* ===== PADDING (HORIZONTAL) ======= */
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+.py-6 {
+    padding: 5rem 0;
+}
+
+.py-7 {
+    padding: 6rem 0;
+}
+
+.py-8 {
+    padding: 7rem 0;
+}
+
+.py-9 {
+    padding: 8rem 0;
+}
+
+.py-10 {
+    padding:10rem 0;
+}
+
+
+/*====== PADDING (VERTICAL) ===*/
+.px-1 {
+    padding: 0 1rem;
+}
+
+.px-2 {
+    padding: 0 1.5rem;
+}
+
+.px-3 {
+    padding: 0 2rem;
+}
+
+.px-4 {
+    padding: 0 3rem;
+}
+
+.px-5 {
+    padding: 0 4rem;
+}

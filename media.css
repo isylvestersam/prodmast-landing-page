@@ -1,0 +1,374 @@
+/* Ipad Pro */
+@media (max-width: 1024px) {
+    html{
+        font-size: 60%;
+    }
+    .heading.center {
+        width: 100%;
+    }
+
+    .icons-left {
+    margin-top: -10rem;
+    }
+
+    .icons-right { 
+    margin-top: -10rem;
+    }
+
+    .icons-right i,
+    .icons-left i{
+        font-size: 1rem;
+    }
+
+    .efficient {
+        width: 100%;
+    }
+
+    .card-2-texts h3 {
+        font-size: 2rem;
+    }
+
+    .flex.between {
+        flex-direction: column;
+    }
+
+    .image-holder {
+        width: 100%;
+        margin-top: 6rem;
+        align-self: flex-start;
+    }
+    .rightbar {
+    width: 100%;
+        margin-top: 1rem;
+    }
+
+    .rightbar h2,
+    .rightbar p {
+        margin: 0.4 0;
+}
+
+    .container-5 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+}
+
+    .right-text-section-five {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--green-bg);
+        padding: 4rem;
+        margin-top: 3rem;
+        border-radius: 1rem 1rem 10rem 10rem;
+        border: 1px solid var(--dark-bg);
+}
+
+.right-text-section-five h3 {
+    font-size: 2rem;
+}
+
+.section-two.grid {
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+/* ===== CARDS ===== */
+    .center-cards.flex {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        gap: 1.5rem;
+    }
+    
+    .card.card-left,
+    .hundred.card.flex.flex-column.one.px-2,
+    .total-projects.card.grid.p-3.cb.white-bg,
+    .card.hundred.flex.flex-column.green-bg.p-5,
+    .card.card-left.dark-bg.flex-column.p-3 {
+        max-width: none;
+    }
+
+    .hundred.card.flex.flex-column.one.px-2,
+    .total-projects.card.grid.p-3.cb.white-bg,
+    .card.hundred.flex.flex-column.green-bg.p-5,
+    .card.card-left.dark-bg.flex-column.p-3 {
+        height: 15rem;
+    }
+
+    .card.card-left {
+        grid-column: 1/3 ;
+        grid-row: 1/2;
+        border: 2px solid var(--dark-bg);
+    }
+
+    .hundred.card.flex.flex-column.one.px-2{
+        grid-column: 1/2 ;
+        grid-row: 2/3;
+        border: 2px solid white;
+    }
+
+    .card.hundred.flex.flex-column.green-bg.p-5 {
+        grid-column: 1/2 ;
+        grid-row: 3/4;
+        border: 2px solid var(--dark-bg);
+    }
+
+    .card.card-left.dark-bg.flex-column.p-3 {
+        grid-column: 2/3 ;
+        grid-row: 3/4;
+        border: 2px solid white;
+    }
+
+    .total-projects.card.grid.p-3.cb.white-bg {
+        gap: 0.5rem;
+        padding-left: 2.3rem;
+        border: 2px solid var(--dark-bg);
+    }
+
+    .container.footer.cw.flex.py-5 {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer-title.column {
+        padding-left: 1rem;
+    }
+    .left-align {
+        margin-top: 2rem;
+    }
+
+    .left-align h3 {
+        font-size: 1.7rem;
+    }
+
+    .get-in-touch {
+        text-align: left;
+        padding-left: 1rem;
+        margin-top: 1rem;
+    }
+    .get-in-touch h3 {
+        font-size: 1.7rem;
+    }
+
+    .btn-primary.green.work {
+        margin: 0 auto;
+    }
+
+    .title.empower{
+        width: 100%;
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    .text.pb-5.pt-2 {
+        text-align: center;
+    }
+
+    .text.footer-phrase {
+        text-align: left;
+    }
+}
+
+
+/* ====== FOR MOBILE =====*/
+@media (max-width: 680px) {
+    .center-cards.flex {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 0.5fr);
+        gap: 1.5rem;
+    }
+
+    html {
+        font-size: 57%;
+    }
+
+    .container {
+        width: 80%
+    }
+
+    .heading.center {
+        font-size: 3.2rem;
+        width: 95%;
+    }
+
+    .logo-class,
+    .pc-above {
+        display: none;
+    }
+
+    .for-mobiles {
+        align-self: flex-start;
+    }
+
+    .logo-mobile {
+        position: relative;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        left: 0;
+        top: 150%;
+        width: 80vw;
+        border-radius: 0 0 1rem 1rem;
+        display: none;
+    }
+
+    .mobile-menu li a {
+        color: black;
+        font-size: 1.7rem;
+        font-weight: 500;
+        
+    }
+
+    .mobile-menu li {
+        padding: 1.5rem 2.5rem;
+        animation: slideInFromTop 0.8s ease;
+    }
+
+    #hamburger {
+        display: none;
+        
+    }
+
+    #hamburger:checked ~ .mobile-menu {
+        display: block;
+        animation: slideInFromTopTwo 0.3s ease;
+    }
+
+    .circle.dark-bg.move {
+        display: none;
+    }
+
+    .center-cards.flex {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container.flex-between {
+        display: none;
+    }
+
+    .total-projects.card.grid.p-3.cb.white-bg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        column-gap: 0rem;
+        padding: 0rem;
+        height: 18rem;
+    }
+
+    nav.for-mobiles {
+        display: block;
+    }
+
+    .icon-wrap {
+        width: 90%;
+    }
+
+    .card.card-left.dark-bg.flex-column.p-3 p{
+        text-align: center;
+    }
+
+    .container.center.section-two{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .efficient {
+        font-size: 2.9rem;
+        padding-top: 7rem;
+    }
+
+    .card2 {
+        max-width: none;
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .rightbar h2 {
+        text-align: center;
+    }
+
+    .text.py-3 {
+        padding: 1rem 0;
+    }
+
+    .container.black{
+        flex-direction: column;
+        gap:0;
+    }
+
+    .price.card {
+        max-width: none;
+        text-align: center;
+        width: 80%;
+        margin: 3rem auto;
+        margin-top: 0rem;
+    }
+
+    .price.card.left-align.one {
+        margin-top: 0rem;
+    }
+
+    .price.card.two {
+        margin-top: 0rem;
+    }
+
+    .price.card p {
+        width: 60%;
+        margin: 0 auto
+    }
+
+    .green-card {
+        width: 80%
+    }
+
+    .btn-transparent.mb-5 {
+        width: 70%;
+        margin: 1rem auto;
+        height: 4rem;
+    }
+
+    .hide-icons {
+        display: block;
+    }
+
+    span.sub-title.bold {
+        font-size: 4rem;
+    }
+
+    .sub-title.pb-1 {
+        font-size: 2.5rem;
+    }
+
+    .text.design.py-1 {
+        width: 80%;
+    }
+
+    .title.pt-2 {
+        font-size: 1.9rem;
+    }
+
+    .text.center.py-3 {
+        width: 100%;
+    }
+
+    .footer-phrase {
+    width:100%;
+    text-align: left;
+}
+
+
+}
